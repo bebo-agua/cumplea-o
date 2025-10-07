@@ -135,12 +135,20 @@
 
 html {
     background-color: hsl(var(--pink-sides));
+    background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     /* Laterales en un único color */
     background-color: hsl(var(--pink-sides));
+    background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
     color: hsl(var(--foreground));
     line-height: 1.6;
 }
@@ -1684,8 +1692,8 @@ h1, h2, h3, h4, h5, h6,
 /* Mobile-only full-page fixed background (simulate background-attachment: fixed) */
 @media (max-width: 768px) and (orientation: portrait) {
 	:root {
-		/* Use existing mobile image for the full-page background */
-		--mobile-bg-image: url('https://i.ibb.co/cXcwBTQq/Dise-o-sin-t-tulo-1.png');
+		/* Use abejita background for the full-page background on mobile */
+		--mobile-bg-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
 		--mobile-bg-color: hsl(var(--pink-sides));
 	}
 
