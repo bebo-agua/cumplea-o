@@ -37,11 +37,6 @@
     max-width: 1100px;
     margin: 0 auto;
     background: transparent;
-    /* Fondo central (mantiene laterales tal como están) */
-    background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
     box-shadow: none;
 }
 
@@ -136,6 +131,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Fondo central en todo el scroll (mantiene bordes laterales) */
+main {
+    background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
 }
 
 html {
@@ -637,6 +640,7 @@ body {
 .gifts-section,
 .rsvp-section {
     padding: 4rem 1rem;
+    background: transparent !important;
 }
 
 /* Sección unificada: Countdown + Celebración */
