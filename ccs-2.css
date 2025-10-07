@@ -656,6 +656,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* Fondo abejita en la franja rosada central */
+    background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
+    background-position: center top;
+    background-size: contain;
 }
 .countdown-events-section .countdown-section,
 .countdown-events-section .events-section {
@@ -1680,11 +1684,13 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
-/* Mobile override: usar imagen específica en móvil para la sección unificada */
+/* Mobile override: mantener abejita también en móvil y evitar duplicados */
 @media (max-width: 768px) {
     .countdown-events-section {
-        background-image: none !important;
-        background: transparent !important;
+        background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png') !important;
+        background-size: contain !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
     }
     .countdown-events-section .countdown-section,
     .countdown-events-section .events-section,
