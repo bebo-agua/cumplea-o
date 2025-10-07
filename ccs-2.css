@@ -637,15 +637,7 @@ body {
 }
 
 /* Fondo abejita solo en las secciones indicadas */
-.countdown-section,
-.events-section,
-.gallery-section,
-.gifts-section {
-    background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-}
+/* Fondo controlado solo por .countdown-events-section para evitar duplicados */
 
 /* Mantener la grilla rosada original: eventos era pastel, lo ponemos transparente para que se vea la abejita */
 .events-section { background-color: transparent !important; }
@@ -653,13 +645,11 @@ body {
 /* Sección unificada: Countdown + Celebración */
 .countdown-events-section {
     padding: 4rem 1rem;
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    /* Fondo abejita en la franja rosada central */
+    /* Una sola imagen abejita ocupando todo el área */
     background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
-    background-position: center top;
-    background-size: contain;
+    background-position: center center;
+    background-size: cover;
 }
 .countdown-events-section .countdown-section,
 .countdown-events-section .events-section {
@@ -1688,8 +1678,8 @@ h1, h2, h3, h4, h5, h6,
 @media (max-width: 768px) {
     .countdown-events-section {
         background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png') !important;
-        background-size: contain !important;
-        background-position: center top !important;
+        background-size: cover !important;
+        background-position: center center !important;
         background-repeat: no-repeat !important;
     }
     .countdown-events-section .countdown-section,
