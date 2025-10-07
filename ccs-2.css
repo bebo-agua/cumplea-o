@@ -1674,6 +1674,23 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
+/* Overrides finales: evitar que sub-secciones tapen el fondo único */
+.countdown-events-section .countdown-section,
+.countdown-events-section .events-section,
+.countdown-events-section .gallery-section,
+.countdown-events-section .gifts-section {
+    background: transparent !important;
+}
+
+@media (max-width: 768px) {
+    .countdown-events-section {
+        background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png') !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+    }
+}
+
 /* Mobile override: mantener abejita también en móvil y evitar duplicados */
 @media (max-width: 768px) {
     .countdown-events-section {
