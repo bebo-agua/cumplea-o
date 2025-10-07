@@ -636,6 +636,20 @@ body {
     padding: 4rem 1rem;
 }
 
+/* Fondo abejita solo en las secciones indicadas */
+.countdown-section,
+.events-section,
+.gallery-section,
+.gifts-section {
+    background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+/* Mantener la grilla rosada original: eventos era pastel, lo ponemos transparente para que se vea la abejita */
+.events-section { background-color: transparent !important; }
+
 /* Sección unificada: Countdown + Celebración */
 .countdown-events-section {
     padding: 4rem 1rem;
@@ -1641,18 +1655,10 @@ h1, h2, h3, h4, h5, h6,
 /* Fondos rosados alternados por sección */
 .page-shell .content .site-container > section:nth-of-type(odd) {
     background-color: hsl(var(--pink-light));
-    background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
 }
 
 .page-shell .content .site-container > section:nth-of-type(even) {
     background-color: hsl(var(--pink-dark));
-    background-image: url('https://i.ibb.co/4ZD9zJdM/abejita-1.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
 }
 
 /* Asignación explícita por secciones para asegurar alternancia visible */
